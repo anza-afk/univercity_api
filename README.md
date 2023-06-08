@@ -13,6 +13,8 @@
 В корне лежат:  
     
     Файл описания сущностей: ENTITIES.md
+    Диаграмма ERD в формате png: erd.png
+    Диаграмма ERD в формате erd: Univercity_erd.erd
     Скрипт создания БД: create_tables.sql
     Скрипт записи некоторых данных в БД: populate_data.sql
     Файл со скриптами из задания: task_script.sql
