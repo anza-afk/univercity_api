@@ -5,7 +5,11 @@
 Клонируем проект:  
 
     git clone https://github.com/anza-afk/univercity_api.git  
+
+Устанавливаем виртуальное окружение:  
     
+    python -m virtualenv venv
+
 Устанавливаем зависимости:  
 
     pip install -r requirements.txt
