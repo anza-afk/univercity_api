@@ -1,6 +1,3 @@
-SELECT 'CREATE DATABASE univercity'
-WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'univercity');
-
 CREATE TABLE IF NOT EXISTS building (
     id int PRIMARY KEY NOT NULL GENERATED ALWAYS AS IDENTITY,
 	title varchar NOT NULL UNIQUE,
