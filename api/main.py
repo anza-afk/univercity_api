@@ -47,7 +47,7 @@ def update_student(
     return crud.update_student(db=db, student_id=student_id, student=student)
 
 
-@app.delete('/students/{student_id}', response_model=schemas.Student)
+@app.delete('/students/{student_id}')
 def delete_student(student_id: int, db: Session = Depends(get_db)) -> dict:
     return crud.delete_student(db=db, student_id=student_id)
 

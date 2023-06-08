@@ -55,7 +55,7 @@ def update_student(
             detail=f'Студент с id {student_id} не найден в базе данных'
         )
     else:
-        for key, value in student.items():
+        for key, value in student.dict().items():
             setattr(db_student, key, value)
         db.commit()
         db.refresh(db_student)
@@ -78,7 +78,7 @@ def delete_student(student_id: int, db: Session) -> dict:
     else:
         db.delete(db_student)
         db.commit()
-        return {'ok': True}
+        return {'Удалён': True}
 
 
 def get_teachers(
@@ -158,7 +158,7 @@ def update_grade(
             detail=f'Оценка с id {grade_id} не найдена в базе данных'
         )
     else:
-        for key, value in grade.items():
+        for key, value in grade.dict().items():
             setattr(db_grade, key, value)
         db.commit()
         db.refresh(db_grade)
