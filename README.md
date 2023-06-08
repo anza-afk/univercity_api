@@ -11,7 +11,8 @@
     pip install -r requirements.txt
     
 В корне лежат:  
-
+    
+    Файл описания сущностей: ENTITIES.md
     Скрипт создания БД: create_tables.sql
     Скрипт записи некоторых данных в БД: populate_data.sql
     Файл со скриптами из задания: task_script.sql
